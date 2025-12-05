@@ -1,66 +1,55 @@
- Customer Lifetime Value (CLV) Analysis – Feature Engineering Completed
+# Customer Lifetime Value (CLV) Analysis – Feature Engineering
 
-This part of the project focuses on cleaning the Online Retail dataset and creating all the CLV-ready derived variables using Python (Pandas).
-These engineered columns will be used later for RFM, CLV modeling, segmentation, and predictive analytics.
+This part of the project focuses on **cleaning the Online Retail dataset** and creating all the **CLV-ready features** using Python (Pandas). These features will later be used for **RFM analysis, CLV modeling, customer segmentation, and predictive analytics**.
 
- 1. Completed Data Cleaning Steps
+---
 
-Handled NULLs and invalid entries
+## **Completed Data Cleaning Steps**
 
-Standardized invoice types (Sale / Return / Manual)
+We performed the following cleaning tasks to make the dataset ready for analysis:
 
-Cleaned descriptions, quantity issues, duplicate invoices
+- Handled **NULLs and invalid entries**.  
+- Standardized **invoice types** (Sale / Return / Manual).  
+- Cleaned **product descriptions**, fixed **quantity issues**, and removed **duplicate invoices**.  
+- Converted **data types** and corrected **negative quantity inconsistencies**.  
 
-Converted dtypes and fixed negative quantity inconsistencies
+---
 
- 2. Feature Engineering Summary
+## **Feature Engineering Summary**
 
-The following columns were created through rule-based classification + business logic:
+We created new columns using **business rules** and **logic** to make the dataset CLV-ready.
 
-🧾 Sales & Invoice Logic
+### **1. Sales & Invoice Logic**
+- **Invoice_Type** → Classified as Sale / Return / Check / Manual.  
+- **Is_Positive_Quantity** → Indicates if quantity is positive.  
+- **Is_Valid_Sale** → Marks valid sales only.  
+- **Revenue** → Calculated only for valid sales.  
 
-Invoice_Type → Sale / Return / Check / Manual
+### **2. Non-Sale Classification**
+- **Reason_Category** → Categorized as Return, Sample, Damage, E-commerce Issue, Credit, Manual Fee, etc.  
+- **Lost_Quantity** → Quantity lost due to returns, damage, etc.  
+- **Non_Sale_Quantity** → Total non-sale quantity.  
+- **Financial_Impact** → Monetary loss from non-sale items.  
 
-Is_Positive_Quantity
+### **3. Customer-Level Metrics**
+- **Customer_Type** → Categorize customers based on activity.  
+- **Customer_Invoice_Count** → Number of invoices per customer.  
+- **Customer_Quantity_Sum** → Total quantity purchased.  
+- **Customer_Revenue_Sum** → Total revenue per customer.  
 
-Is_Valid_Sale
+### **4. CLV Metrics**
+- **Recency_Days** → Days since last purchase.  
+- **Monetary_Value** → Total revenue per customer.  
+- **Avg_Order_Value** → Average order value per customer.  
 
-Revenue (only for valid sales)
+These columns **prepare the dataset for RFM analysis and CLV modeling**.
 
-Non-Sale Classification
+---
 
-Reason_Category → Return, Sample, Damage, E-commerce Issue, Credit, Manual Fee, etc.
+## **Upcoming Tasks**
 
-Lost_Quantity
+The next steps in the project include:
 
-Non_Sale_Quantity
-
-Financial_Impact (non-sale monetary loss)
-
-Customer-Level Metrics
-
-Customer_Type
-
-Customer_Invoice_Count
-
-Customer_Quantity_Sum
-
-Customer_Revenue_Sum
-
-CLV Metrics
-
-Recency_Days
-
-Monetary_Value
-
-Avg_Order_Value
-
-All these columns prepare the dataset for RFM Analysis + CLV Modeling.
-
-3. Upcoming Tasks
-
-RFM Segmentation
-
-Machine Learning Model for CLV Prediction
-
-Customer Segmentation using KMeans
+- **RFM Segmentation** → Classify customers based on Recency, Frequency, and Monetary value.  
+- **Machine Learning Model for CLV Prediction** → Predict future customer lifetime value.  
+- **Customer Segmentation using KMeans** → Group similar customers for targeted strategies.
