@@ -1,6 +1,6 @@
-# 📊 Customer Lifetime Value (CLV) Analysis – Exploratory Data Analysis
+# Customer Lifetime Value (CLV) Analysis – Exploratory Data Analysis
 
-## 🔍 Project Overview
+## Project Overview
 This project focuses on **Customer Lifetime Value (CLV)–oriented Exploratory Data Analysis (EDA)** using a large-scale online retail transaction dataset.  
 The primary goal is to analyze **customer purchasing behavior, revenue contribution, order frequency, and retention-related patterns** to support data-driven business decisions.
 
@@ -8,7 +8,7 @@ The analysis converts raw invoice-level data into **customer-level insights** th
 
 ---
 
-## 📦 Dataset Description
+##  Dataset Description
 - **Dataset Type:** Online Retail Transaction Data  
 - **Size:** 500,000+ rows  
 - **Granularity:** Invoice-level transactions  
@@ -27,7 +27,7 @@ The analysis converts raw invoice-level data into **customer-level insights** th
 
 ---
 
-## 🛠 Tools & Technologies
+##  Tools & Technologies
 - **Python**
 - **Pandas & NumPy** – data manipulation and aggregation  
 - **Matplotlib & Plotly** – exploratory and interactive visualizations  
@@ -35,9 +35,9 @@ The analysis converts raw invoice-level data into **customer-level insights** th
 
 ---
 
-## 🔧 Key Analysis Steps
+##  Key Analysis Steps
 
-### 1️⃣ Data Understanding & Preparation
+###  Data Understanding & Preparation
 - Loaded and validated large-scale transactional data
 - Verified multiple invoices per customer
 - Created customer-level aggregations:
@@ -49,7 +49,7 @@ The analysis converts raw invoice-level data into **customer-level insights** th
 
 ---
 
-### 2️⃣ Customer Behavior & Segmentation
+###  Customer Behavior & Segmentation
 - Segmented customers based on:
   - Invoice frequency
   - Revenue contribution
@@ -60,7 +60,7 @@ The analysis converts raw invoice-level data into **customer-level insights** th
 
 ---
 
-### 3️⃣ Exploratory Data Analysis (EDA)
+###  Exploratory Data Analysis (EDA)
 - **Country-level revenue analysis**
 - **Product & category-level contribution analysis**
 - **Invoice type and financial impact analysis**
@@ -69,7 +69,7 @@ The analysis converts raw invoice-level data into **customer-level insights** th
 
 ---
 
-### 4️⃣ CLV-Oriented Metrics Exploration
+###  CLV-Oriented Metrics Exploration
 - Distribution of invoice frequency per customer
 - Identification of top customers by:
   - Revenue
@@ -79,7 +79,7 @@ The analysis converts raw invoice-level data into **customer-level insights** th
 
 ---
 
-## 📈 Key Insights
+##  Key Insights
 - A **small percentage of customers generate a large share of total revenue**
 - High-frequency customers show:
   - Higher monetary value
@@ -90,7 +90,7 @@ The analysis converts raw invoice-level data into **customer-level insights** th
 
 ---
 
-## 💡 Business Value
+##  Business Value
 This analysis enables businesses to:
 - Identify and retain **high-value customers**
 - Improve **targeted marketing and loyalty strategies**
@@ -100,7 +100,7 @@ This analysis enables businesses to:
 
 ---
 
-## ⚠️ Challenges & Learnings
+##  Challenges & Learnings
 - Efficient handling of **500k+ rows of transactional data**
 - Designing meaningful customer-level features from invoice-level data
 - Translating EDA outputs into **business-focused insights**
@@ -108,7 +108,7 @@ This analysis enables businesses to:
 
 ---
 
-## 🚀 Future Work
+##  Future Work
 - Build a **predictive CLV model** using RFM features
 - Perform **cohort-based retention analysis**
 - Apply **customer clustering** (K-Means / Hierarchical)
@@ -116,7 +116,7 @@ This analysis enables businesses to:
 
 ---
 
-## 🎯 Skills Demonstrated
+##  Skills Demonstrated
 - Real-world exploratory data analysis (EDA)
 - Customer lifetime value concepts
 - Feature engineering for customer analytics
@@ -125,14 +125,14 @@ This analysis enables businesses to:
 
 ---
 
-## 📌 How to Use This Repository
+##  How to Use This Repository
 1. Open the Jupyter Notebook (`.ipynb`) to view the analysis
 2. Follow the step-by-step EDA workflow
 3. Use insights as a base for CLV modeling or dashboard creation
 
 ---
 
-## 📬 Contact
+##  Contact
 **Md. Imran**  
 Aspiring Business / Data Analyst  
 📍 Bangladesh  
